@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kidsbook Room</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-primary" onclick="logout();">Logout</button>
+        <button id="info" class="glyphicon glyphicon-book btn btn-info" onclick="info();">Info</button>
+        <center>
+            <h1 class="header">
+                Kidsbook
+                <sup>
+                    <img src="m2.png">
+                </sup>
+            </h1>
+            <h3 id="user_name" class="color_white"></h3>
+            <div class="form-group input_div_room_page">
+                <label>#Add Room:</label>
+                <input type="text" id="room_name" class="form-control" placeholder="#Room Name">
+            </div>
+            <button class="btn btn-warning" onclick="addRoom();">#Add Room</button>
+            <h3 class="text-muted">#TRENDING ROOMS</h3>
+            <div id="output"></div>
+        </center>
+    </div>
+    <script src="room.js"></script>
+</body>
+
+</html>
